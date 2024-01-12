@@ -25,3 +25,6 @@ def normalize(images,labels):
   images=tf.cast(images,tf.float32)
   images /= 255 #Here passes it by 0-255 to 0-1
   return images,labels
+
+data_training = data_training.map(normalize)
+data_test = data_test.map(normalize)
