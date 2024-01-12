@@ -18,3 +18,5 @@ metadata
 data_training,data_test = data['train'],data['test']
 
 class_nanes = metadata.features['label'].names
+
+class_nanes
