@@ -15,4 +15,4 @@ data, metadata = tfds.load('fashion_mnist', as_supervised=True, with_info=True)
 
 metadata
 
-
+data_training,data_test = data['train'],data['test']
