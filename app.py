@@ -28,3 +28,6 @@ def normalize(images,labels):
 
 data_training = data_training.map(normalize)
 data_test = data_test.map(normalize)
+
+data_training = data_training.cache()
+data_test = data_test.cache()
