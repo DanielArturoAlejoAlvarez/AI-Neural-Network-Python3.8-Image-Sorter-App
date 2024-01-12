@@ -12,3 +12,7 @@ import math
 """
 
 data, metadata = tfds.load('fashion_mnist', as_supervised=True, with_info=True)
+
+metadata
+
+
