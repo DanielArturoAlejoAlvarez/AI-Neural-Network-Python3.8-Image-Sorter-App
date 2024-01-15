@@ -31,3 +31,8 @@ data_test = data_test.map(normalize)
 
 data_training = data_training.cache()
 data_test = data_test.cache()
+
+for image,label in data_training.take(1):
+  break
+
+
