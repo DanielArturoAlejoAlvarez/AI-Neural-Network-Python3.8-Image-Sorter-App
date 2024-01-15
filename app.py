@@ -36,3 +36,5 @@ for image,label in data_training.take(1):
   break
 
 image = image.numpy().reshape((28,28))
+
+import matplotlib.pyplot as plt
