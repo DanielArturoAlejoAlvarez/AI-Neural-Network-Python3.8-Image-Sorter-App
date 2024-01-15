@@ -38,3 +38,9 @@ for image,label in data_training.take(1):
 image = image.numpy().reshape((28,28))
 
 import matplotlib.pyplot as plt
+
+plt.figure()
+plt.imshow(image, cmap=plt.cm.binary)
+plt.colorbar()
+plt.grid(False)
+plt.show()
