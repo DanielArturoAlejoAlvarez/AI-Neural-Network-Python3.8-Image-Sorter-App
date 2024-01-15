@@ -35,4 +35,4 @@ data_test = data_test.cache()
 for image,label in data_training.take(1):
   break
 
-
+image = image.numpy().reshape((28,28))
