@@ -44,3 +44,5 @@ plt.imshow(image, cmap=plt.cm.binary)
 plt.colorbar()
 plt.grid(False)
 plt.show()
+
+plt.figure(figsize=(10,10))
