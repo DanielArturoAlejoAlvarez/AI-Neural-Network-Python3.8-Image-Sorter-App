@@ -46,3 +46,12 @@ plt.grid(False)
 plt.show()
 
 plt.figure(figsize=(10,10))
+
+for i,(image,label) in enumerate(data_training.take(25)):
+  image = image.numpy().reshape((28,28))
+  plt.subplot(5,5,i+1)
+  plt.xticks([])
+  plt.yticks([])
+  plt.grid()
+  plt.imshow(image, cmap=plt.cm.binary)
+  plt.xlabel(class_nanes[label])
