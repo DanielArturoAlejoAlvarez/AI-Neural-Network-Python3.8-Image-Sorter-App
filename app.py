@@ -55,3 +55,12 @@ for i,(image,label) in enumerate(data_training.take(25)):
   plt.grid()
   plt.imshow(image, cmap=plt.cm.binary)
   plt.xlabel(class_nanes[label])
+
+plt.show()
+
+model = tf.keras.Sequential([
+  tf.keras.layers.Flatten(input_shape=(28,28,1)),
+  tf.keras.layers.Dense(50, activation=tf.nn.relu),
+  tf.keras.layers.Dense(50, activation=tf.nn.relu),
+  tf.keras.layers.Dense(50, activation=tf.nn.softmax)
+])
