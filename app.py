@@ -70,3 +70,9 @@ model.compile(
   loss=tf.keras.losses.SparseCategoricalCrossentropy(),
   metrics=['accuracy']
 )
+
+num_ex_training=metadata.splits['train'].num_examples
+num_ex_testing=metadata.splits['test'].num_examples
+
+print(num_ex_training)
+print(num_ex_testing)
