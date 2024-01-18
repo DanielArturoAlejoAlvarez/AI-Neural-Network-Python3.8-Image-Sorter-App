@@ -76,3 +76,8 @@ num_ex_testing=metadata.splits['test'].num_examples
 
 print(num_ex_training)
 print(num_ex_testing)
+
+LOT_SIZE=32
+
+data_training=data_training.repeat().shuffle(num_ex_training).batch(LOT_SIZE)
+data_test=data_test.batch(LOT_SIZE)
