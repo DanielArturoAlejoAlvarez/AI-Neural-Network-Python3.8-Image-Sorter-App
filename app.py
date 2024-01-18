@@ -64,3 +64,9 @@ model = tf.keras.Sequential([
   tf.keras.layers.Dense(50, activation=tf.nn.relu),
   tf.keras.layers.Dense(50, activation=tf.nn.softmax)
 ])
+
+model.compile(
+  optimizer='adam',
+  loss=tf.keras.losses.SparseCategoricalCrossentropy(),
+  metrics=['accuracy']
+)
