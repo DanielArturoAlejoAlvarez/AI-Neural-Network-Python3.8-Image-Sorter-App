@@ -31,7 +31,7 @@ numpy==1.24.3
 oauthlib==3.2.2
 opt-einsum==3.3.0
 packaging==23.2
-Pillow==10.1.0
+Pillow==10.2.0
 promise==2.3
 protobuf==3.20.3
 psutil==5.9.6
