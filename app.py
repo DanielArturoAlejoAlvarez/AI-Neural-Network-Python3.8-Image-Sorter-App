@@ -81,3 +81,7 @@ LOT_SIZE=32
 
 data_training=data_training.repeat().shuffle(num_ex_training).batch(LOT_SIZE)
 data_test=data_test.batch(LOT_SIZE)
+
+import math
+
+history = model.fit(data_training, epochs=5, steps_per_epoch=math.ceil(num_ex_training/LOT_SIZE))
