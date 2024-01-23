@@ -85,3 +85,7 @@ data_test=data_test.batch(LOT_SIZE)
 import math
 
 history = model.fit(data_training, epochs=5, steps_per_epoch=math.ceil(num_ex_training/LOT_SIZE))
+
+plt.xlabel("# Epochs")
+plt.ylabel("Magnitude of the loss")
+plt.plot(history.history["loss"])
