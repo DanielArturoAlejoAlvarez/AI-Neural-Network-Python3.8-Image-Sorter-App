@@ -95,8 +95,8 @@ for images_test,labels_test in data_test.take(1):
   labels_test = labels_test.numpy()
   predictions = model.predict(images_test)
 
-def draw_image(i,arr_predictions,labels_r,image):
-  arr_predictions,label_r,img = arr_predictions[i],label_r[i],images[i]
+def draw_image(i,arr_predictions,label_r,image):
+  arr_predictions,label_r,img = arr_predictions[i],label_r[i],image[i]
   plt.grid(False)
   plt.xticks([])
   plt.yticks([])
