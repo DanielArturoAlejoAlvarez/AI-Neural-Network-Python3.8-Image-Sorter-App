@@ -107,3 +107,10 @@ def draw_image(i,arr_predictions,labels_r,image):
     color = 'blue' #Ok prediction
   else:
     color = 'red' #error prediction
+
+  plt.xlabel("{} {:2.0f}% ({})".format(
+      class_nanes[label_prediction],
+      100*np.max(arr_predictions),
+      class_nanes[label_r]),
+      color=color
+  )
