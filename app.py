@@ -89,3 +89,8 @@ history = model.fit(data_training, epochs=5, steps_per_epoch=math.ceil(num_ex_tr
 plt.xlabel("# Epochs")
 plt.ylabel("Magnitude of the loss")
 plt.plot(history.history["loss"])
+
+for images_test,labels_test in data_test.take(1):
+  images_test = images_test.numpy()
+  labels_test = labels_test.numpy()
+  predictions = model.predict(images_test)
