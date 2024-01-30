@@ -94,3 +94,16 @@ for images_test,labels_test in data_test.take(1):
   images_test = images_test.numpy()
   labels_test = labels_test.numpy()
   predictions = model.predict(images_test)
+
+def draw_image(i,arr_predictions,labels_r,image):
+  arr_predictions,label_r,img = arr_predictions[i],label_r[i],images[i]
+  plt.grid(False)
+  plt.xticks([])
+  plt.yticks([])
+
+  plt.imshow(img[...,0], cmap=plt.cm.binary)
+  label_prediction=np.argmax(arr_predictions)
+  if label_prediction == label_r:
+    color = 'blue' #Ok prediction
+  else:
+    color = 'red' #error prediction
