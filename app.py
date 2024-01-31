@@ -137,7 +137,11 @@ for i in range(num_images):
   draw_image(i,predictions,labels_test,images_test)
   plt.subplot(files, columns*2, i*2+2)
   draw_value_array(i,predictions,labels_test)
-  
+
+image = images_test[10]
+image = np.array([image])
+prediction = model.predict(image)
+
 
 
 
