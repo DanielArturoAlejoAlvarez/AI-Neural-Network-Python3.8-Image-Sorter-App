@@ -114,3 +114,17 @@ def draw_image(i,arr_predictions,label_r,image):
       class_nanes[label_r]),
       color=color
   )
+
+def draw_value_array(i, arr_predictions,label_r):
+  arr_predictions,label_r = arr_predictions[i],label_r[i]
+  plt.grid(False)
+  plt.xticks([])
+  plt.yticks([])
+  graphic = plt.bar(range(10),arr_predictions,color="#777777")
+  plt.ylim([0,1])
+  label_prediction = np.argmax(arr_predictions)
+  graphic[label_prediction].set_color("red")
+  graphic[label_r].set_color("blue")
+
+  
+
