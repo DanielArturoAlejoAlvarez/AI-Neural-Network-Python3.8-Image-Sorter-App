@@ -126,5 +126,11 @@ def draw_value_array(i, arr_predictions,label_r):
   graphic[label_prediction].set_color("red")
   graphic[label_r].set_color("blue")
 
-  
+files = 5
+columns = 5
+num_images = files*columns
+
+plt.figure(figsize=(2*2*columns, 2*files))
+
+
 
