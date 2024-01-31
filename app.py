@@ -132,5 +132,13 @@ num_images = files*columns
 
 plt.figure(figsize=(2*2*columns, 2*files))
 
+for i in range(num_images):
+  plt.subplot(files, columns*2, i*2+1)
+  draw_image(i,predictions,labels_test,images_test)
+  plt.subplot(files, columns*2, i*2+2)
+  draw_value_array(i,predictions,labels_test)
+  
+
+
 
 
