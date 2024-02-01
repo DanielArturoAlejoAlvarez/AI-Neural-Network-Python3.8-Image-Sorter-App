@@ -148,7 +148,7 @@ model.save('model_export.h5')
 
 # !pip install tensorflowjs
 
-
+# !mkdir tfjs_target_dir
 
 
 
