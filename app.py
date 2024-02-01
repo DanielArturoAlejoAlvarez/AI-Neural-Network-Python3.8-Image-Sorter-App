@@ -142,6 +142,9 @@ image = images_test[10]
 image = np.array([image])
 prediction = model.predict(image)
 
+print("Prediction: " + class_nanes[np.argmax(prediction[0])])
+
+model.save('model_export.h5')
 
 
 
