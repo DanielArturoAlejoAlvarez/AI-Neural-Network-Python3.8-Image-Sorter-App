@@ -150,5 +150,7 @@ model.save('model_export.h5')
 
 # !mkdir tfjs_target_dir
 
+# !tensorflowjs_converter --input_format keras model_export.h5 tfjs_target_dir
+
 
 
