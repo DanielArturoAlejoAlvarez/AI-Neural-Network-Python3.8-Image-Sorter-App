@@ -34,7 +34,7 @@ $ python3 app.py
 
 Follow the following steps and you're good to go! Important:
 
-![alt text]([https://deeplearning.neuromatch.io/_images/W1D1_Tutorial1_222_0.png](https://sethna.lassp.cornell.edu/Sloppy/SloppyFigs/training.gif))
+![alt text]([https://deeplearning.neuromatch.io/_images/W1D1_Tutorial1_222_0.png](https://sethna.lassp.cornell.edu/Sloppy/SloppyFigs/training.gif)
 
 ##### Deep learning is the subset of machine learning methods based on artificial neural networks
 
