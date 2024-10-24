@@ -5,7 +5,7 @@
 Software of Development using AI, Neural Network, Tensorflow, Keras, Matplotlib and Python.
 
 
-![alt text](https://lh6.googleusercontent.com/kORBxj2FJOgfINtzqZLETFI2mrkvZF0rhbSDGbGtNBUNAZSCB7SCJ_iZaoqVoJ2MWdTgTL1-fVBNeb4EnUrmNFZc53JDJQXUebiKUrjY-LEBJ2QwssMx9tO8-4Kt3GIDR3ZN9ft10l4GKxvI_uq_2Lc)
+![alt text](https://thinkingneuron.com/wp-content/uploads/2020/10/How-to-use-ANN-for-classification-in-python.png)
 
 ## Apps
 
@@ -34,7 +34,7 @@ $ python3 app.py
 
 Follow the following steps and you're good to go! Important:
 
-![alt text](https://deeplearning.neuromatch.io/_images/W1D1_Tutorial1_222_0.png)
+![alt text]([https://deeplearning.neuromatch.io/_images/W1D1_Tutorial1_222_0.png](https://sethna.lassp.cornell.edu/Sloppy/SloppyFigs/training.gif))
 
 ##### Deep learning is the subset of machine learning methods based on artificial neural networks
 
